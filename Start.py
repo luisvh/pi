@@ -30,7 +30,7 @@ while True:
     Now = datetime.now()
     date_time = Now.strftime("%Y-%m-%d %H:%M:%S")
     
-    #Inject data into BigQuery. numeor 2
+    #Inject data into BigQuery. numero 234 test
     query1 = (
         'INSERT `smartpi-273316.PiSensors.Sensors` (Date, Temperature, Comment,Humidity) '
         'VALUES  (DATETIME "' + str(date_time) + '",'
